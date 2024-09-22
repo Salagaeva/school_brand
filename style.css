@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: #1B1918;
+    font-family: 'SF Pro Display';
+    user-select: none; 
+}
+
+/* Font */
+
+@font-face {
+    font-family: 'Winter Sans Trial regular';
+    src: url(./fonts/WinterSansTrial/WinterSansTrial-Regular.otf);
+}
+@font-face {
+    font-family: 'Winter Sans Trial italic';
+    src: url(./fonts/WinterSansTrial/WinterSansTrial-Italic.otf);
+}
+@font-face {
+    font-family: 'Winter Sans Trial extrabold';
+    src: url(./fonts/WinterSansTrial/WinterSansTrial-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(./fonts/SFpro/SF-Pro-Display-Regular.otf);
+}
+@font-face {
+    font-family: 'SF Pro Display medium';
+    src: url(./fonts/SFpro/SF-Pro-Display-Medium.otf);
+}
+/* Палитра цветов */
+:root {
+    --primary-color: #E5261E; 
+    --secondary-color: #F6F6F6; 
+    --text-color: #1B1918; 
+    --light-text-color: #8D8C8B;
+    --white: #fff; 
+    --footer__back__img-color1: #B9B9B9;
+    --footer__back__img-color2: #D7DADB;
+}
+
+body{
+    background-color: var(--secondary-color);
+}
+
+/* HEADER */
+.header{
+    z-index: 100;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--text-color);
+    padding: 0 4.8rem 0 4.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    column-gap: 10.8rem;
+    align-items: center;
+}
+
+.container_place{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    flex-direction: row;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 1.44rem;
+    height: 100%;
+}
+
+.nav a{
+    color : var(--light-text-color);
+    font-size: 0.72rem;
+    cursor: pointer;
+}
+
+.text_nav {
+    font-size: 2vh;
+    font-weight: 450;
+    margin-right: 5vh;
+    text-decoration: none;
+}
+
+.link1:hover {
+    text-decoration: underline;
+    text-underline-offset: 1vh;
+    text-decoration-thickness: 0.1vh;
+  }
+
+.place{
+    color : var(--white);
+    font-size: 0.78rem;
+}
+
+.phone{
+    font-size: 0.84rem;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 11.7rem;
+}
+
+.cursor{
+    cursor: pointer; 
+}
+
+
+.container_phone p{
+    color : var(--white);
+}
+/* MENU */
+
+.menu{
+    margin-top: 4rem;
+    height: 4rem;
+    padding: 0 0.84rem 0 0.84rem;
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+    display: flex;
+    background-color: var(--white);
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.container_two{
+    height: 100%;
+    display: flex;
+    column-gap: 5.6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_two_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.36rem;
+}
+
+.container_two_catalog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    column-gap: 1.34rem;
+}
+
+.container_two_catalog p{
+    color : var(--text-color);
+    font-size: 0.84rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.icons{
+    display: flex;
+    column-gap: 0.84rem;
+    height: 100%;
+    align-items: center;
+}
+
+.ico{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.64rem;
+    width: 2.64rem;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.like{
+    font-size: 0.4rem;
+    font-weight: 800;
+    position: absolute;
+    top: -0.44rem;
+    right: -0.44rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+    width: 1rem;
+    background-color:var(--primary-color);
+    border-radius: 50%;
+    color: var(--white);
+}
+
+/* GRID */
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 11.7rem;
+    gap: 1rem;
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+    margin-bottom: 4rem;
+}
+
+.grid_main{
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    overflow: hidden;
+}
+
+.grid_main_verkhniyT{
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    border-right: var(--primary-color) 0.28rem solid;
+    border-top: var(--primary-color) 0.28rem solid;
+    width: 8.7rem;
+    height: 5.16rem;
+}
+
+.grid_main_verkhniyT p{
+    font-size: 2.08rem;
+    color: var(--white);
+    font-weight: 590;
+    font-family: 'SF Pro Display medium';
+}
+
+.grid_main_verkhniyT div{
+    text-align: right;
+    position: absolute;
+    top: -0.10rem;
+    right: 0.7rem;
+}
+
+.grid_main_lowerT{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.grid_main_lowerT span{
+    font-size: 3.24rem;
+    font-family: 'Winter Sans Trial extrabold';
+    padding: 0.5rem 1rem 0.5rem 0rem;
+    background-color: var(--white);
+} 
+
+.grid_main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid_side{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 100%;
+    height: 11.7rem;
+}
+
+.catalog{
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.catalog p{
+    font-family: 'Winter Sans Trial italic';
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.grid_side_title{
+    font-size: 5.4rem;
+    font-weight: 400;
+    font-family: 'Winter Sans Trial regular';
+    line-height: 4.8rem;
+}
+
+.grid_side_subtitle{
+    font-size: 0.84rem;
+    font-weight: 590;
+}
+
+.light{
+    color: var(--primary-color);
+}
+
+.grid_side img{
+    width: 3rem;
+    height: 3rem;
+}
+
+/* FOOTER */
+
+.footer{
+    position: relative;
+}
+
+.footer_back{
+    position: relative;
+    background-color: var(--text-color);
+    width: 100%;
+    padding-bottom: 18rem;
+    margin-bottom: 16.2rem;
+}
+
+.footer_back_text{
+    padding: 4.8rem 4.8rem 0 4.8rem;
+    width: 100%;
+}
+
+.footer_back_text_title{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.footer_back_text span{
+    font-size: 3.24rem;
+    font-family: 'Winter Sans Trial extrabold';
+    color: var(--white);
+}
+
+.footer_back_text p{
+    font-size: 3.24rem;
+    font-family: 'Winter Sans Trial extrabold';
+    color: var(--white);
+}
+
+.footer_back_text_subtitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer_back_text_title img{
+    width: 3.24rem;
+    height: 3.24rem;
+}
+
+.footer_back_img{
+    z-index: 10;
+    position: absolute;
+    width: 87.5%;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -16.2rem;
+    margin-bottom: 3rem;
+    height: 26.4rem;
+    background: linear-gradient(90deg, var(--footer__back__img-color1) 0%, var(--footer__back__img-color2) 100%);
+}
+
+.footer_back_Img{
+    position: absolute;
+    bottom: -0.22rem;
+    left: 29.7rem;
+}
+
+.footer_back_img_text{
+    position: absolute;
+    bottom: 4.2rem;
+    left: 24.68rem;
+}
+
+.relative{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.footer_back_lowerT{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.office{
+    font-family: 'Winter Sans Trial extrabold';
+    font-size: 2.64rem;
+    padding: 0.5rem 1rem 0.5rem 0rem;
+    background-color: var(--white);
+}
+
+.office span{
+    font-size: 2.64rem;
+}
+
+.sub{
+    font-size: 1.44rem;
+    padding: 0.5rem 1rem 0.5rem 0rem;
+    background-color: var(--white);
+}
+
+.footer_back_verkhniyT{
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    border-left: var(--primary-color) 0.28rem solid;
+    border-top: var(--primary-color) 0.28rem solid;
+    width: 19.08rem;
+    height: 5.16rem;
+}
+
+.footer_back_verkhniyT div{
+    position: absolute;
+    left: 1.2rem;
+}
+
+.footer_back_verkhniyT p{
+    font-size: 2.08rem;
+    color: var(--white);
+    font-weight: 590;
+    font-family: 'SF Pro Display medium';
+}
+
+.footer_back_catalog{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 5.88rem;
+    height: 5.88rem;
+    background-color: var(--white);
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.footer_back_catalog_img{
+    background-color: var(--primary-color);;
+    border-radius: 50%;
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_back_catalog_img img{
+    width: 1.2rem;
+    height: 1.24rem;
+}
